@@ -8,4 +8,9 @@ export default defineNuxtConfig({
       darkMode: "class",
     },
   },
+  colorMode: {
+    classSuffix: "",
+    preference: "system",
+    fallback: "dark",
+  },
 })
