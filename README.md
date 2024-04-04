@@ -1,6 +1,9 @@
 # Nuxt Tailwind PrimeVue Starter
-
-![Nuxt Logo](./assets/logos/nuxt-logo.png) ![TailwindCSS Logo](./assets/logos/tailwindcss-logo.png) ![PrimeVue Logo](./assets/logos/primevue-logo.png)
+<p align="center">
+<img src="https://nuxt.com/assets/design-kit/icon-green.svg" alt="Nuxt Logo" width="100"/>
+<img src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg" alt="Tailwind Logo" width="100"/>
+<img src="https://www.primefaces.org/presskit/primevue-logo.svg" alt="primevue Logo" width="90"/>
+</p>
 
 This project is a boilerplate starter kit designed for developers looking to jumpstart their projects using Nuxt 3, TailwindCSS, and PrimeVue. It includes a basic setup with support for light and dark modes, leveraging the best practices of each framework and library to provide a solid foundation for any web application.
 
@@ -26,6 +29,6 @@ I installed this using pnpm, feel free to choice your own
 ```bash
 git clone https://github.com/yourusername/nuxt-tailwind-primevue-starter.git
 cd nuxt-tailwind-primevue-starter
-pnpm install # or yarn install
+pnpm install # or your favo
 pnpm run dev # for development server
 pnpm run build # for the production build
