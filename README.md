@@ -1,75 +1,31 @@
-# Nuxt 3 Minimal Starter
+# Nuxt Tailwind PrimeVue Starter
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+![Nuxt Logo](./assets/logos/nuxt-logo.png) ![TailwindCSS Logo](./assets/logos/tailwindcss-logo.png) ![PrimeVue Logo](./assets/logos/primevue-logo.png)
 
-## Setup
+This project is a boilerplate starter kit designed for developers looking to jumpstart their projects using Nuxt 3, TailwindCSS, and PrimeVue. It includes a basic setup with support for light and dark modes, leveraging the best practices of each framework and library to provide a solid foundation for any web application.
 
-Make sure to install the dependencies:
+## Features
 
-```bash
-# npm
-npm install
+- **Nuxt 3**: Modern frontend framework for Vue.js applications, offering server-side rendering, static site generation, and more.
+- **TailwindCSS**: A utility-first CSS framework for rapidly building custom designs with ease.
+- **PrimeVue**: A comprehensive suite of UI components for Vue, enabling rich interface design.
+- **Dark and Light Mode**: Built-in support for dark and light themes, easily toggleable and customizable.
 
-# pnpm
-pnpm install
+## Prerequisites
 
-# yarn
-yarn install
+Before you begin, ensure you have met the following requirements:
+- Node.js 18.x or newer
+- Any package manager
 
-# bun
-bun install
-```
+## Installation
 
-## Development Server
+Clone this boilerplate to start your project:
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
+I installed this using pnpm, feel free to choice your own
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+git clone https://github.com/yourusername/nuxt-tailwind-primevue-starter.git
+cd nuxt-tailwind-primevue-starter
+pnpm install # or yarn install
+pnpm run dev # for development server
+pnpm run build # for the production build
