@@ -31,7 +31,7 @@
 </template>
 
 <script setup lang="ts">
-const colorMode = useColorMode()
+import 'primeicons/primeicons.css'
 
 const items = ref([
   {
