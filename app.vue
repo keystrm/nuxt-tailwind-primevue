@@ -1,9 +1,30 @@
 <template>
   <div>
-    <div class="transition-colors duration-500 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 min-h-screen">
+    <div
+      class="transition-colors duration-500 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 min-h-screen">
       <!-- Sticky Menu Bar -->
       <div ref="menuBarRef" class="sticky top-0 z-50 bg-white dark:bg-gray-900/80 backdrop-blur-lg shadow-md">
-        <Menubar :model="items" class="py-2 px-4" />
+        <Menubar :model="items">
+          <template #start>
+          </template>
+          <template #item="{ item, props, hasSubmenu, root }">
+            <a v-ripple class="flex align-items-center" v-bind="props.action">
+              <span :class="item.icon" />
+              <span class="ml-2">{{ item.label }}</span>
+              <Badge v-if="item.badge" :class="{ 'ml-auto': !root, 'ml-2': root }" :value="item.badge" />
+              <span v-if="item.shortcut" class="ml-auto border-1 surface-border border-round surface-100 text-xs p-1">{{
+          item.shortcut }}</span>
+              <i v-if="hasSubmenu"
+                :class="['pi pi-angle-down', { 'pi-angle-down ml-2': root, 'pi-angle-right ml-auto': !root }]"></i>
+            </a>
+          </template>
+          <template #end>
+            <div class="flex align-items-center gap-2">
+              <ColorModeSwitch/>
+              <InputText placeholder="Search" type="text" class="w-8rem sm:w-auto" />
+            </div>
+          </template>
+        </Menubar>
       </div>
 
       <!-- Page Content -->
@@ -14,15 +35,7 @@
         <p class="mt-2 text-lg text-gray-600 dark:text-gray-300">
           Welcome to your Nuxt app enhanced with PrimeVue and Tailwind CSS.
         </p>
-        <!-- Theme Selector -->
-        <div>
-          <select v-model="$colorMode.preference">
-            <option value="system">System</option>
-            <option value="light">Light</option>
-            <option value="dark">Dark</option>
-            <option value="sepia">Sepia</option>
-          </select>
-        </div>
+
       </div>
 
     </div>

@@ -2,6 +2,7 @@
 import path from 'path';
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  css:['~/assets/css/main.css'],
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode","nuxt-primevue"],
   tailwindcss: {
     config: {
