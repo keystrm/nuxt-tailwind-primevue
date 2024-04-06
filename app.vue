@@ -1,9 +1,9 @@
 <template>
   <div>
     <div
-      class="transition-colors duration-500 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 min-h-screen">
+      class="transition-colors duration-500 min-h-screen dark:bg-surface-800 text-surface-600 dark:text-surface-400">
       <!-- Sticky Menu Bar -->
-      <div ref="menuBarRef" class="sticky top-0 z-50 bg-white dark:bg-gray-900/80 backdrop-blur-lg shadow-md">
+      <div ref="menuBarRef" class="sticky top-0 z-50 backdrop-blur-lg shadow-md">
         <Menubar :model="items">
           <template #start>
           </template>
@@ -32,7 +32,7 @@
         <h1 class="text-4xl font-bold">
           Hello world!
         </h1>
-        <p class="mt-2 text-lg text-gray-600 dark:text-gray-300">
+        <p class="mt-2 text-lg">
           Welcome to your Nuxt app enhanced with PrimeVue and Tailwind CSS.
         </p>
 
